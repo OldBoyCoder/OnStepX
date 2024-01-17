@@ -35,7 +35,9 @@
 #define JTWSTM                      19     // JTW Astronomy JTWSTM telescope mount controller Rev 2.1
 #define MANTICORE                   20     // JTW Astronomy MANTICORE telescope mount controller Rev 1.0
 
-#define PINMAP_LAST                 20
+#define GD32Blue                    21     // Chris Reynolds copy of the STMBlue for the GD32F303
+
+#define PINMAP_LAST                 21
 
 // WEATHER sensors (temperature, pressure, and humidity)
 #define WEATHER_FIRST               1

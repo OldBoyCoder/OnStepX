@@ -42,6 +42,8 @@
   #include "HAL_TEENSY_HWTIMER.h"
 #elif defined(ESP32)
   #include "HAL_ESP32_HWTIMER.h"
+#elif defined(GD32F30x)
+  #include "HAL_GD32_HWTIMER.h"
 #else
   #include "HAL_EMPTY_HWTIMER.h"
 #endif

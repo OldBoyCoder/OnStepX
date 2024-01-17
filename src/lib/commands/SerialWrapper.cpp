@@ -5,21 +5,33 @@
 
 #if SERIAL_A == HardSerial
   #undef SERIAL_A
+#if defined(GD32F30x)
+HardwareSerial HWSerialA(SERIAL_A_RX, SERIAL_A_TX, 0);
+#else
   HardwareSerial HWSerialA(SERIAL_A_RX, SERIAL_A_TX);
+#endif
   #define SERIAL_A HWSerialA
   #define SERIAL_A_RXTX_SET
 #endif
 
 #if SERIAL_B == HardSerial
   #undef SERIAL_B
+#if defined(GD32F30x)
+HardwareSerial HWSerialB(SERIAL_B_RX, SERIAL_B_TX, 1);
+#else
   HardwareSerial HWSerialB(SERIAL_B_RX, SERIAL_B_TX);
+#endif
   #define SERIAL_B HWSerialB
   #define SERIAL_B_RXTX_SET
 #endif
 
 #if SERIAL_C == HardSerial
   #undef SERIAL_C
+#if defined(GD32F30x)
+HardwareSerial HWSerialC(SERIAL_C_RX, SERIAL_C_TX, 0);
+#else
   HardwareSerial HWSerialC(SERIAL_C_RX, SERIAL_C_TX);
+#endif
   #define SERIAL_C HWSerialC
   #define SERIAL_C_RXTX_SET
 #endif

@@ -79,6 +79,10 @@
   #define PINMAP_STR "MaxSTM v3"
   #include "Pins.MaxSTM.h"
 #endif
+#if PINMAP == GD32Blue
+  #define PINMAP_STR "GD32 Bluepill"
+  #include "Pins.GD32.h"
+#endif
 #ifndef PINMAP_STR
   #define PINMAP_STR "Unknown"
 #endif

@@ -97,7 +97,10 @@
   // Arduino UNO R4 WIFI
   #define MCU_STR "RENESAS RA4M1 (Arduino UNO R4 WIFI)"
   #include "HAL_UNO_R4_WIFI.h"  
-
+#elif defined(GD32F30x)
+  // WeAct GD32F303
+  #define MCU_STR "GD32F303"
+  #include "HAL_GD32F303.h"  
 #else
   // Generic
   #warning "Unknown Platform! If this is a new platform, it would probably do best with a new HAL designed for it."
